@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>New Post</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-card">
+            <header class="form-head">
+                <p class="form-eyebrow">New Post</p>
+                <h1 class="form-title">Create a post</h1>
+                <p class="form-subtitle">Keep it clear and focused.</p>
+            </header>
+
+            <form class="post-form" action="/posts" method="POST">
+                <label class="field">
+                    <span class="field-label">Username</span>
+                    <input type="text" name="username" placeholder="Jane Doe" required />
+                </label>
+
+                <label class="field">
+                    <span class="field-label">Title</span>
+                    <input type="text" name="title" placeholder="A precise, useful title" required />
+                </label>
+
+                <label class="field">
+                    <span class="field-label">Content</span>
+                    <textarea name="content" placeholder="Write the story..." rows="8" required></textarea>
+                </label>
+
+                <button class="btn" type="submit">Publish</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

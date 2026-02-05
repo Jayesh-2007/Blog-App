@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@400;600&display=swap");
+
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--white);
+    color: var(--black);
+    font-family: "IBM Plex Serif", "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+.container {
+    width: min(900px, 92vw);
+    margin: 0 auto;
+}
+
+
+.site-eyebrow {
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+}
+
+.site-header h1 {
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    font-size: clamp(28px, 4vw, 44px);
+    margin-top: 8px;
+}
+
+.site-tagline {
+    margin-top: 12px;
+    max-width: 40ch;
+}
+
+.posts {
+    padding: 28px 0 40px;
+    display: grid;
+    gap: 18px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 32px 0 0;
+}
+
+.post {
+    border: 1px solid var(--black);
+    padding: 18px 20px;
+}
+
+.post-head {
+    margin-bottom: 10px;
+}
+
+.post-author {
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.post-title {
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.post-body {
+    font-size: 16px;
+}
+
+.empty {
+    border: 1px dashed var(--black);
+    padding: 20px;
+}
+
+.form-card {
+    border: 1px solid var(--black);
+    padding: 28px;
+    margin: 40px 0;
+}
+
+.form-head {
+    margin-bottom: 20px;
+}
+
+.form-eyebrow {
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+}
+
+.form-title {
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    font-size: clamp(24px, 3vw, 36px);
+    margin-top: 6px;
+}
+
+.form-subtitle {
+    margin-top: 8px;
+    max-width: 42ch;
+}
+
+.post-form {
+    display: grid;
+    gap: 16px;
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+}
+
+.field-label {
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.post-form input,
+.post-form textarea {
+    font: inherit;
+    border: 1px solid var(--black);
+    padding: 12px 14px;
+    background: var(--white);
+    color: var(--black);
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+}
+
+.btn {
+    border: 1px solid var(--black);
+    background: var(--black);
+    color: var(--white);
+    padding: 12px 20px;
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 12px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.btn:hover {
+    background: var(--white);
+    color: var(--black);
+}

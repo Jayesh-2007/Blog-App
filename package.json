@@ -1,0 +1,23 @@
+{
+  "name": "blog_app",
+  "version": "1.0.0",
+  "description": "\"# Blog-App\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jayesh-2007/Blog-App.git"
+  },
+  "author": "Jayesh S. Hadiyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jayesh-2007/Blog-App/issues"
+  },
+  "homepage": "https://github.com/Jayesh-2007/Blog-App#readme",
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}
