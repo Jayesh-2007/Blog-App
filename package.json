@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Jayesh-2007/Blog-App#readme",
   "dependencies": {
     "ejs": "^4.0.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "method-override": "^3.0.0",
+    "uuid": "^13.0.0"
   }
 }

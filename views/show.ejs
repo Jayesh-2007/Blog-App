@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Detail</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <% if (post) { %>
+            <section class="detail-card">
+                <header class="detail-head">
+                    <p class="detail-eyebrow">Post Detail</p>
+                    <h1 class="detail-title">
+                        <%= post.title %>
+                    </h1>
+                    <div class="detail-meta">
+                        <span class="detail-author">
+                            <%= post.username %>
+                        </span>
+                        <span class="detail-divider">•</span>
+                        <span class="detail-id">ID <%= post.id %></span>
+                    </div>
+                </header>
+                <article class="detail-body">
+                    <%= post.content %>
+                </article>
+                <div class="detail-actions">
+                    <a class="btn btn-primary" href="/posts/<%= post.id %>/edit">Edit Post</a>
+                    <a class="btn btn-ghost" href="/posts">Back to Posts</a>
+                </div>
+            </section>
+            <% } else { %>
+                <section class="detail-card">
+                    <header class="detail-head">
+                        <p class="detail-eyebrow">Post Detail</p>
+                        <h1 class="detail-title">Post not found</h1>
+                    </header>
+                    <p class="detail-body">We couldn't find that post. Try heading back to the list.</p>
+                    <div class="detail-actions">
+                        <a class="btn btn-ghost" href="/posts">Back to Posts</a>
+                    </div>
+                </section>
+                <% } %>
+    </main>
+</body>
+
+</html>
